@@ -1,10 +1,3 @@
-provider "aws" {
-  region     = "us-east-2"
-  #alias="hellotest"
-  access_key = "AKIA366UABK23NS63G2Z"
-  secret_key = "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"
-}
-
 resource "aws_security_group" "second_sg" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
