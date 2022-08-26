@@ -69,7 +69,7 @@ resource "aws_security_group" "first_sg" {
 }
 
 resource "aws_instance" "Own_FirstInstance"{
-		ami="ami-0b614a5d911900a9b"
+		ami="ami-052efd3df9dad4825"
 		instance_type="t2.micro"
     #aws_security_group="allow_tls"
     vpc_security_group_ids = [aws_security_group.first_sg.id]
@@ -80,7 +80,7 @@ resource "aws_instance" "Own_FirstInstance"{
 	}
 
   resource "aws_instance" "Own_SecondInstance"{
-  		ami="ami-0b614a5d911900a9b"
+  		ami="ami-052efd3df9dad4825"
   		instance_type="t2.micro"
       #aws_security_group="allow_tls"
       vpc_security_group_ids = [aws_security_group.second_sg.id]
