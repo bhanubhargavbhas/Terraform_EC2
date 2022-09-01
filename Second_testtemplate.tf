@@ -72,7 +72,7 @@ resource "aws_instance" "Own_FirstInstance"{
 		ami="ami-052efd3df9dad4825"
 		instance_type="t2.micro"
     #aws_security_group="allow_tls"
- 		key_name= "aws_key"
+ 		key_name= "id_rsa"
     vpc_security_group_ids = [aws_security_group.first_sg.id]
 
 		tags = {
@@ -84,7 +84,7 @@ resource "aws_instance" "Own_FirstInstance"{
   		ami="ami-052efd3df9dad4825"
   		instance_type="t2.micro"
       #aws_security_group="allow_tls"
- 	  	key_name="aws_key"
+ 	  	key_name="id_rsa"
       vpc_security_group_ids = [aws_security_group.second_sg.id]
 
   		tags = {
@@ -92,8 +92,8 @@ resource "aws_instance" "Own_FirstInstance"{
   		}
   	}
 
-resource "aws_key_pair" "deployer" {
-  key_name   = "aws_key"
-  public_key = "${file("/home/ubuntu/.ssh/id_rsa.pub")}"
+# resource "aws_key_pair" "deployer" {
+#   key_name   = "aws_key"
+#   public_key = "${file("/home/ubuntu/.ssh/id_rsa.pub")}"
 
-}
+# }
