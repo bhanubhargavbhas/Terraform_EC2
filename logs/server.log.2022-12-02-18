@@ -1,0 +1,2 @@
+[2022-12-02 20:10:27,500] INFO Expiring session 0x1001343cc410002, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2022-12-02 20:10:30,647] INFO Invalid session 0x1001343cc410002 for client /127.0.0.1:60177, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
